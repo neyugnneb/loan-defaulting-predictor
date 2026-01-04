@@ -102,8 +102,7 @@ for threshold in [0.3, 0.4, 0.5, 0.6, 0.7]:
     print(f"\n--- Threshold: {threshold} | Accuracy: {accuracy:.4f} ---")
     print(classification_report(Y_test, y_pred_thresh, target_names=['No Default', 'Default']))
 
-# After reviewing results above, pick your optimal threshold
-# For example, if 0.4 looks best:
+# Pick best threshold based on the results
 optimal_threshold = 0.4  # Change this based on what you see
 y_pred = (y_proba >= optimal_threshold).astype(int)
 print(f"\n{'='*50}")
