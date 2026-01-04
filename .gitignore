@@ -1,0 +1,15 @@
+# Data
+data/
+
+# Python
+__pycache__/
+*.pyc
+.env
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# React
+node_modules/
+build/
